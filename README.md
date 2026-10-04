@@ -250,3 +250,30 @@
             },
             'stressed': { 
                 title: '✉️ Open when you\'re stressed or overwhelmed:', 
+                content: 'Stop where you are right now, deep breath, and relax your shoulder area. You have too many tabs open in your head, start closing some, and focus on releasing the stress and the overwhelming thoughts. \n\nAgain, you can always call me and we can breathe together over the phone.'
+},
+            'doubtful': {
+                title: '✉️ Open when you're feeling doubtful:',
+                content: 'I wish you could see yourself through my eyes for just one minute. If you did, you would never doubt yourself in any aspect. You are stunning, whimsical, bright, sexcc, doing amazing in life, a pleasure, caring, kind, and just every beauty in this life on earth. \n\nAs of right now tall to yourself KINDLY RT NOW! OR call me, and I will reassure you.:)'
+},
+           'motivation': {
+               title: '✉️ Open when you're lacking motivation:',
+                content: 'Sonja I want to remind you are capable of anything, do not ever doubt that. I want you to stand up, grab your journal, and just write whatever. Then, get up shower, and relax your body with joyful music and dance around if you're up to part. \n\nIf you still feel lack of motivation, call me and we can continue from there.'
+},
+                'exam': {
+                    title: '✉️ Open when you have an exam/ or anything huge:',
+                    content: 'You got this! You go in there as if you got the thing you wanted already. Realistically, being perfect is not an always outcome, but you always are perfect. So. You got this, and tell me the gret news afterwards!!'
+},
+                'random': {
+                    title: '✉️ Open randomly (I will change this every other week):',
+                    content: 'Hey, sexcc! I like you alot, and I do not want to take things slow, however I want to increase our knowledge of one another. I am so excited to learn who you are and who we will become. You are amazing, you take one thing and make it so beautiful in every way there is to do so. \n\nI too wish to become the person you imagine to let be with you one day. Til then lets continue to learn each other inside and out.'
+}
+};
+// Open Note Trigger Function
+function openLetter(mood) {
+const box = document.getElementById('letter-box');
+document.getElementById('letter-title').innerText = letters[mood].title;
+document.getElementById('letter-content').innerText = letters[mood].content;
+box.style.display = 'block';
+box.scrollIntoView({ behavior: 'smooth' });
+}
