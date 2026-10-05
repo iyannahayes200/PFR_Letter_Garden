@@ -200,7 +200,7 @@ PFR_Letter_Garden
     <script>
         function checkCode() {
             const input = document.getElementById('code-input').value;
-            const correctCode = "032509040920";
+            const correctCode = "032509040820";
             
             if (input === correctCode) {
                 document.getElementById('password-screen').style.display = 'none';
